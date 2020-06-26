@@ -1,0 +1,257 @@
+@keyframes fly_1 {
+  0% {
+    left: 0px;
+    top: 3vh;
+  }
+  50% {
+    left: 300px;
+    top: 28vh;
+  }
+  80% {
+    left: 500px;
+    top: 62vh;
+  }
+  100% {
+    left: 1500px;
+    top: 44vh;
+  }
+}
+@keyframes fly_2 {
+  0% {
+    left: 0px;
+    top: 27vh;
+  }
+  20% {
+    left: 150px;
+    top: 9vh;
+  }
+  50% {
+    left: 300px;
+    top: 4vh;
+  }
+  60% {
+    left: 350px;
+    top: 28vh;
+  }
+  80% {
+    left: 500px;
+    top: 73vh;
+  }
+  85% {
+    left: 650px;
+    top: 8vh;
+  }
+  90% {
+    left: 900px;
+    top: 45vh;
+  }
+  100% {
+    left: 1500px;
+    top: 44vh;
+  }
+}
+@keyframes fly_3 {
+  0% {
+    left: 50px;
+    top: 38vh;
+  }
+  20% {
+    left: 125px;
+    top: 25vh;
+  }
+  50% {
+    left: 400px;
+    top: 53vh;
+  }
+  60% {
+    left: 200px;
+    top: 59vh;
+  }
+  80% {
+    left: 600px;
+    top: 50vh;
+  }
+  85% {
+    left: 750px;
+    top: 68vh;
+  }
+  90% {
+    left: 950px;
+    top: 73vh;
+  }
+  100% {
+    left: 1500px;
+    top: 13vh;
+  }
+}
+@keyframes fly_4 {
+  0% {
+    left: 60px;
+    top: 23vh;
+  }
+  20% {
+    left: 450px;
+    top: 86vh;
+  }
+  50% {
+    left: 200px;
+    top: 77vh;
+  }
+  60% {
+    left: 350px;
+    top: 44vh;
+  }
+  80% {
+    left: 600px;
+    top: 19vh;
+  }
+  85% {
+    left: 780px;
+    top: 40vh;
+  }
+  90% {
+    left: 990px;
+    top: 60vh;
+  }
+  100% {
+    left: 1500px;
+    top: 82vh;
+  }
+}
+@keyframes fly_5 {
+  0% {
+    right: 50px;
+    top: 36vh;
+  }
+  20% {
+    right: 250px;
+    top: 32vh;
+  }
+  50% {
+    right: 625px;
+    top: 74vh;
+  }
+  60% {
+    right: 754px;
+    top: 76vh;
+  }
+  80% {
+    right: 980px;
+    top: 36vh;
+  }
+  85% {
+    right: 1000px;
+    top: 13vh;
+  }
+  90% {
+    right: 800px;
+    top: 18vh;
+  }
+  100% {
+    right: 1500px;
+    top: 66vh;
+  }
+}
+@keyframes fly_6 {
+  0% {
+    right: 0px;
+    top: 17vh;
+  }
+  30% {
+    right: 468px;
+    top: 3vh;
+  }
+  60% {
+    right: 729px;
+    top: 87vh;
+  }
+  70% {
+    right: 550px;
+    top: 82vh;
+  }
+  80% {
+    right: 1000px;
+    top: 55vh;
+  }
+  90% {
+    right: 800px;
+    top: 16vh;
+  }
+  90% {
+    right: 1000px;
+    top: 15vh;
+  }
+  100% {
+    right: 1500px;
+    top: 21vh;
+  }
+}
+#container {
+  background-image: url("https://img5.goodfon.ru/original/1920x1080/f/b7/gaming-night-stil-fon-style-illustration-retrowave-synthwave.jpg");
+  background-size: cover;
+  height: 100vh;
+  counter-reset: count;
+  position: relative;
+}
+
+input[type=checkbox]:checked {
+  counter-increment: count;
+}
+
+h1::after {
+  content: " " counter(count);
+}
+img {
+  width: 150px;
+}
+.fly_l {
+  left: -999999px;
+}
+.fly_r {
+  right: -999999px;
+}
+input[type=checkbox] {
+  position: absolute;
+  visibility: hidden;
+  left: -999999px;
+}
+
+h1 {
+  position: absolute;
+  bottom: -16px;
+  left: 32px;
+}
+
+.fly1 {
+  position: absolute;
+  animation: fly_1 4s linear 0s 1 normal;
+}
+
+.fly2 {
+  position: absolute;
+  animation: fly_2 8s linear 0s 1 normal;
+}
+
+.fly3 {
+  position: absolute;
+  animation: fly_3 8s linear 0s 1 normal;
+}
+
+.fly4 {
+  position: absolute;
+  animation: fly_4 8s linear 0s 1 normal;
+}
+
+.fly5 {
+  position: absolute;
+  animation: fly_5 8s linear 0s 1 normal;
+}
+
+.fly6 {
+  position: absolute;
+  animation: fly_6 8s linear 0s 1 normal;
+}
+
+.text {
+  color: white;
+}
